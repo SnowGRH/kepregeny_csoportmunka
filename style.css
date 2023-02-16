@@ -17,7 +17,10 @@ main{
     margin: auto;  
     text-align: center;
   }
-  header{
+  header img{
+    width: 100%;
+  }
+  img{
     width: 100%;
   }
   article{
@@ -25,6 +28,7 @@ main{
     justify-content: space-around;
   }
   nav, nav ul{
+    padding: 10px;
     background-color: orange;
     flex-direction: row;
     justify-content: space-between;
@@ -34,15 +38,25 @@ main{
     padding-right: 20px;
 }
 nav a{
+  color: white;
     text-decoration: none;
     font-size: 16pt;
 }
 nav a:hover{
-  color: #62C4E0;
-  font-weight: bold;
+  transition: .3s;
+  color: rgb(37, 37, 37);
 }
 footer{
     background-color: orange;
     font-size: 30px;
     align-content: flex-start;
+  }
+
+  .art{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    display: flex;
+    margin-right: 20px;
   }
