@@ -37,26 +37,56 @@ main{
     list-style: none;
     padding-right: 20px;
 }
-nav a{
+a{
+  position: relative;
   color: white;
-    text-decoration: none;
-    font-size: 16pt;
+  text-decoration: none;
+  font-size: 16pt;
 }
-nav a:hover{
-  transition: .3s;
-  color: rgb(37, 37, 37);
+a::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
-footer{
-    background-color: orange;
-    font-size: 30px;
-    align-content: flex-start;
-  }
+a:hover::before {
+  transform: scaleX(1);
+}
 
-  .art{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul{
-    display: flex;
-    margin-right: 20px;
-  }
+footer{
+  position: relative;
+  background-color: orange;
+  font-size: 30px;
+  align-content: flex-start;
+}
+footer::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+footer:hover::before{
+  transform: scaleX(1);
+}
+
+
+.art{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  display: flex;
+  margin-right: 20px;
+}
