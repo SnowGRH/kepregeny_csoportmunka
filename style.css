@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("kepregeny_kepek/hesteg_vagany másolata.jpg");
+    width: 100%;
+}
+main,nav,article,footer{
+    display: flex;
+}
+main{
+    flex-direction: column;
+    justify-content: center;
+    background: #fcfcfc;
+    width: 60%;
+    margin: auto;  
+    text-align: center;
+  }
+  header{
+    width: 100%;
+  }
+  article{
+    align-content: flex-start;
+    justify-content: space-around;
+  }
+  nav, nav ul{
+    background-color: orange;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  nav li{
+    list-style: none;
+    padding-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 16pt;
+}
+nav a:hover{
+  color: #62C4E0;
+  font-weight: bold;
+}
+footer{
+    background-color: orange;
+    font-size: 30px;
+    align-content: flex-start;
+  }
