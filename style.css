@@ -17,19 +17,16 @@ main{
     margin: auto;  
     text-align: center;
   }
-  header{
-    width: 100%;
-  }
-  article{
+article{
     align-content: flex-start;
     justify-content: space-around;
   }
-  nav, nav ul{
+nav, nav ul{
     background-color: orange;
     flex-direction: row;
     justify-content: space-between;
 }
-  nav li{
+nav li{
     list-style: none;
     padding-right: 20px;
 }
